@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>Education dashboard</title>
+
+        <!-- icon link -->
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    </head>
+    <body>
+
+        <!-- wrap div -->
+
+        <div class="wrap">
+
+            <!-- sidebar -->
+
+            <div class="sidebar">
+
+                <!-- sidebar toggler -->
+                <label class="sidebar__toggler__btn" for="togglerBox"><i class="fas fa-bars"></i></label>
+                <input class="sidebar__toggler" id="togglerBox" type="checkbox">
+
+                <!-- sidebar nav -->
+                <nav class="sidebar__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                <i class="far fa-user-circle"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                <i class="far fa-comment"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                <i class="far fa-calendar-alt"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                <i class="far fa-clock"></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- main container -->
+
+            <div class="main">
+
+                <!-- main status bar -->
+                <div class="status_bar">
+
+                    <h2 class="status_bar__title">
+                        Dashboard
+                    </h2>
+                    <input class="status_bar__search" type="search" placeholder="Search">
+                    <a class="status_bar__add" href="#">
+                        <i class="fas fa-plus"></i>
+                    </a>
+
+                    <!-- status bar notification dropdown -->
+                    <div class="status_bar__dropdown">
+
+                        <button class="dropdown__btn">
+                            <i class="far fa-bell"></i>
+                        </button>
+
+                        <div class="dropdown__content">
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        notification one
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        notification two
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        notification three
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="status_bar__avatar">
+                        <img class="avatar" src="src/img/avatar-ali.png" alt="profile">
+                        <h3 class="avatar__title">Hira R</h3>
+                    </div>
+                </div>
+
+                <!-- grid container -->
+                <div class="container__grid">
+
+                    <div class="prof__profiles">
+
+                        <div class="prof__profiles__heading">
+                            <h1 class="profiles__title">
+                                Find your teacher
+                            </h1>
+                            <a class="profiles__link" href="#">
+                                English <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+
+                        <div class="prof__profiles__body">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
