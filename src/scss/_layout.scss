@@ -1,0 +1,130 @@
+// wrap flex***
+
+// laptop view 
+@media (min-width: 900px) {
+    .wrap {
+        display: flex;
+    }
+}
+// desktop view
+@media (min-width: 1200px){
+    .wrap {
+        display: flex;
+    }
+}
+
+
+
+// main section***
+
+.main {
+    width: 100vw;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+// laptop view 
+@media (min-width: 900px) {
+    .main {
+        width: 92vw;
+        margin-top: 0;
+    }
+}
+
+// desktop view
+@media (min-width: 1200px) {
+    .main {
+        width: 92vw;
+        margin-top: 0;
+    }
+}
+
+// container grid***
+
+// mobile view 
+.container__grid {
+    display: grid;
+    grid-template-areas: 
+    'profile'
+    'schedule'
+    'side';
+    grid-gap: 20px;
+}
+.prof__profile {
+    grid-area: profile;
+}
+.schedule {
+    grid-area: schedule;
+}
+.side__card {
+    grid-area: side;
+}
+
+
+// tablet view
+@media (min-width: 600px) {
+    .container__grid {
+        display: grid;
+        grid-template-areas: 
+        'profile profile'
+        'profile profile'
+        'schedule schedule'
+        'schedule schedule'
+        'side side'
+        'side side';
+        grid-gap: 20px;
+    }
+    .prof__profile {
+        grid-area: profile;
+    }
+    .schedule {
+        grid-area: schedule;
+    }
+    .side__card {
+        grid-area: side;
+    }
+}
+
+// laptop view
+@media (min-width: 900px) {
+    .container__grid {
+        display: grid;
+        grid-template-areas: 
+        'profile profile side'
+        'profile profile side'
+        'schedule schedule side'
+        'schedule schedule side';
+        grid-gap: 20px;
+    }
+    .prof__profile {
+        grid-area: profile;
+    }
+    .schedule {
+        grid-area: schedule;
+    }
+    .side__card {
+        grid-area: side;
+    }
+}
+
+// desktop view
+@media (min-width: 1200px) {
+    .container__grid {
+        display: grid;
+        grid-template-areas: 
+        'profile profile side'
+        'profile profile side'
+        'schedule schedule side'
+        'schedule schedule side';
+        grid-gap: 20px;
+    }
+    .prof__profile {
+        grid-area: profile;
+    }
+    .schedule {
+        grid-area: schedule;
+    }
+    .side__card {
+        grid-area: side;
+    }
+}
