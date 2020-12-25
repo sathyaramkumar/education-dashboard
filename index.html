@@ -8,6 +8,15 @@
 
         <!-- icon link -->
         <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> 
+
+        <!-- css link -->
+        <link rel="stylesheet" href="src/scss/style.css">
+
+
     </head>
     <body>
 
@@ -71,63 +80,306 @@
                         Dashboard
                     </h2>
                     <input class="status_bar__search" type="search" placeholder="Search">
-                    <a class="status_bar__add" href="#">
-                        <i class="fas fa-plus"></i>
-                    </a>
 
-                    <!-- status bar notification dropdown -->
-                    <div class="status_bar__dropdown">
+                    <div class="notification__wrap">
 
-                        <button class="dropdown__btn">
-                            <i class="far fa-bell"></i>
-                        </button>
-
-                        <div class="dropdown__content">
-                            <ul class="dropdown__list">
-                                <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">
-                                        notification one
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">
-                                        notification two
-                                    </a>
-                                </li>
-                                <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">
-                                        notification three
-                                    </a>
-                                </li>
-                            </ul>
+                        <a class="status_bar__add" href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+    
+                        <!-- status bar notification dropdown -->
+                        <div class="status_bar__dropdown">
+    
+                            <button class="dropdown__btn">
+                                <i class="far fa-bell"></i>
+                            </button>
+    
+                            <div class="dropdown__content">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            notification one
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            notification two
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a class="dropdown__link" href="#">
+                                            notification three
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="status_bar__avatar">
-                        <img class="avatar" src="src/img/avatar-ali.png" alt="profile">
-                        <h3 class="avatar__title">Hira R</h3>
+    
+                        <div class="status_bar__avatar">
+                            <img class="avatar" src="src/img/avatar-ali.png" alt="profile">
+                            <h3 class="avatar__title">Hira R</h3>
+                        </div>
                     </div>
                 </div>
 
                 <!-- grid container -->
                 <div class="container__grid">
 
-                    <div class="prof__profiles">
+                    <div class="prof__profile">
 
-                        <div class="prof__profiles__heading">
-                            <h1 class="profiles__title">
+                        <!-- profile header section -->
+                        <div class="prof__profile__heading">
+                            <h1 class="profile__title">
                                 Find your teacher
                             </h1>
-                            <a class="profiles__link" href="#">
-                                English <i class="fas fa-chevron-down"></i>
+                            <select class="profile__dropdown">
+                                <option class="dropdown__menu" selected>
+                                    <a class="dropdown__link" href="#">
+                                        English
+                                    </a>
+                                </option>
+                                <option class="dropdown__menu">
+                                    <a class="dropdown__link" href="#">
+                                        Tamil
+                                    </a>
+                                </option>
+                                <option class="dropdown__menu">
+                                    <a class="dropdown__link" href="#">
+                                        French
+                                    </a>
+                                </option>
+                                <option class="dropdown__menu">
+                                    <a class="dropdown__link" href="#">
+                                        Bengali
+                                    </a>
+                                </option>
+                            </select>
+                        </div>
+
+                        <!-- profile section -->
+                        <div class="prof__profile__body">
+
+                            <div class="profile__avatar">
+                                <div class="avatar">
+                                    <img class="avatar__img" src="src/img/avatar-ali.png" alt="profile picture">
+                                    <h3 class="avatar__name">
+                                        Prof.David
+                                    </h3>
+                                </div>
+                                <time class="profile__avatar__time">
+                                    4 hours lecture
+                                </time>
+                                <h5 class="profile__avatar__amount">
+                                    $100/hr
+                                </h5>
+                                <a class="profile__avatar__more" href="#">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </a>
+                            </div>
+
+                            <div class="profile__avatar">
+                                <div class="avatar">
+                                    <img class="avatar__img" src="src/img/avatar-anisha.png" alt="profile picture">
+                                    <h3 class="avatar__name">
+                                        Prof.Lily
+                                    </h3>
+                                </div>
+                                <time class="profile__avatar__time">
+                                    2 hours lecture
+                                </time>
+                                <h5 class="profile__avatar__amount">
+                                    $120/hr
+                                </h5>
+                                <a class="profile__avatar__more" href="#">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </a>
+                            </div>
+
+                            <div class="profile__avatar">
+                                <div class="avatar">
+                                    <img class="avatar__img" src="src/img/avatar-richard.png" alt="profile picture">
+                                    <h3 class="avatar__name">
+                                        Prof.Alex
+                                    </h3>
+                                </div>
+                                <time class="profile__avatar__time">
+                                    4 hours lecture
+                                </time>
+                                <h5 class="profile__avatar__amount">
+                                    $150/hr
+                                </h5>
+                                <a class="profile__avatar__more" href="#">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- schedule section -->
+
+                    <div class="schedule">
+
+                        <!-- schedule bar -->
+                        <div class="schedule__bar">
+                            <h2 class="schedule__bar__title">
+                                Schedule
+                            </h2>
+                            <time class="schedule__bar__time" datetime="8-10-2020">
+                                Oct 08,2020
+                            </time>
+                            <select class="schedule__bar__dropdown">
+                                <option class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        Prof. David
+                                    </a>
+                                </option>
+                                <option class="dropdown__item" selected>
+                                    <a class="dropdown__link" href="#">
+                                        Prof. Lily
+                                    </a>
+                                </option>
+                                <option class="dropdown__item">
+                                    <a class="dropdown__link" href="#">
+                                        Prof. Alex
+                                    </a>
+                                </option>
+                            </select>
+                        </div>
+
+                        <!-- schedule body section -->
+                        <div class="schedule__body">
+
+                            <!-- profile card -->
+                            <div class="schedule__body__card">
+                                <img class="card__img" src="src/img/avatar-shanai.png" alt="profile picture">
+                                <div class="card__body">
+                                    <h2 class="card__body__title">
+                                        Prof. Lily
+                                    </h2>
+                                    <p class="card__body__text">
+                                        5 years Experience Master's in Language
+                                    </p>
+                                    <button class="card__body__btn">
+                                        Book Online
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- mini cards -->
+                            <div class="schedule__body__mini__card">
+                                
+                                <div class="mini__card">
+                                    <time class="mini__card__date">12</time>
+                                    <time class="mini__card__container">
+                                        <p class="month">Dec</p>
+                                        <h4 class="day">Monday</h4>
+                                    </time>
+                                </div>
+
+                                <div class="mini__card">
+                                    <time class="mini__card__date">13</time>
+                                    <time class="mini__card__container">
+                                        <p class="month">Dec</p>
+                                        <h4 class="day">Tuesday</h4>
+                                    </time>
+                                </div>
+
+                                <div class="mini__card">
+                                    <time class="mini__card__date">14</time>
+                                    <time class="mini__card__container">
+                                        <p class="month">Dec</p>
+                                        <h4 class="day">Wednesday</h4>
+                                    </time>
+                                </div>
+                            </div>
+
+                            <!-- time period -->
+                            <div class="schedule__body__period">
+                                <time class="period__time">
+                                    10:00am-12:00pm
+                                </time>
+                                <time class="period__time">
+                                    02:00pm-04:00pm
+                                </time>
+                                <time class="period__time">
+                                    08:00am-10:00am
+                                </time>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- side card -->
+                    <aside class="side__card">
+
+                        <h1 class="side__card__title">
+                            My Courses
+                        </h1>
+
+                        <!-- course profile -->
+                        <div class="course">
+                            <img class="course__img" src="src/img/avatar-ali.png" alt="course profile picture">
+                            <div class="course__content">
+                                <h3 class="course__title">English</h3>
+                                <small class="course__sub__title">20 Hours</small>
+                            </div>
+                            <a class="course__menu" href="#">
+                                <i class="fas fa-ellipsis-v"></i>
                             </a>
                         </div>
 
-                        <div class="prof__profiles__body">
-
-
+                        <div class="course">
+                            <img class="course__img" src="src/img/avatar-anisha.png" alt="course profile picture">
+                            <div class="course__content">
+                                <h3 class="course__title">Spoken course</h3>
+                                <small class="course__sub__title">40 Hours</small>
+                            </div>
+                            <a class="course__menu" href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
                         </div>
-                    </div>
+
+                        <div class="course">
+                            <img class="course__img" src="src/img/avatar-ali.png" alt="course profile picture">
+                            <div class="course__content">
+                                <h3 class="course__title">Writing course</h3>
+                                <small class="course__sub__title">20 Hours</small>
+                            </div>
+                            <a class="course__menu" href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </div>
+
+                        <div class="course">
+                            <img class="course__img" src="src/img/avatar-ali.png" alt="course profile picture">
+                            <div class="course__content">
+                                <h3 class="course__title">Language course</h3>
+                                <small class="course__sub__title">20 Hours</small>
+                            </div>
+                            <a class="course__menu" href="#">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </a>
+                        </div>
+
+                        <!-- progress section -->
+                        <div class="side__card__progress">
+
+                            <h2 class="progress__title">
+                                Account Progress
+                            </h2>
+
+                            <div class="circular">
+                                <div class="inner">70%</div>
+                                <div class="progress__right"></div>
+                                <div class="progress__left"></div>
+                            </div>
+
+                            <div class="progress__bar">
+                                <h5 class="progress__bar__title">Progress</h5>
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </div>
