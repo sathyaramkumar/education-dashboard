@@ -1,0 +1,185 @@
+// mobile view
+.schedule {
+    &__bar {
+        @include flex-jc-ai(row , start , center);
+        width: 90vw;
+        margin-bottom: 20px;
+        &__title {
+            font-size: $largeTitle;
+        }
+        &__time {
+            display: none;
+            margin-left: auto;
+            padding: 0 10px;
+            font-size: 13px;
+            color: $textMuted;
+        }
+        &__dropdown {
+            margin-left: auto;
+            height: 35px;
+            padding: 0 10px;
+            background-color: $black;
+            color: $white;
+            border-radius: 50px;
+        }
+    }
+    &__body {
+        &__card {
+            width: 80vw;
+            margin: auto;
+            text-align: center;
+            border-radius: 20px;
+            background-color: $cardBackground;
+            .card__img {
+                width: 70px;
+                height: 70px;
+                margin: 20px 0;
+            }
+            .card__body {
+                &__title {
+                    font-size: $regular;
+                }
+                &__text {
+                    width: 150px;
+                    margin: auto;
+                    font-size: $small;
+                    color: $textMuted;
+                }
+                &__btn {
+                    margin: 30px auto;
+                    padding: 8px 15px;
+                    border-radius: 50px;
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+        }
+        &__mini__card {
+            .mini__card {
+                @include flex-jc-ai (row , start , center);
+                width: 80vw;
+                margin: 30px auto;
+                border: 1px solid $textMuted;
+                border-radius: 30px;
+                &__date {
+                    padding: 30px;
+                    font-weight: $fontSemiBold;
+                    font-size: $largeTitle;
+                }
+                &__container {}
+            }
+        }
+        &__period {
+            .period__time {
+                display: none;
+                font-size: $small;
+            }
+        }
+    }
+}
+
+// tablet view 
+@media (min-width: 600px) {
+    .schedule {
+        &__bar {
+            @include flex-jc-ai(row , start , center);
+            width: 90vw;
+            margin-bottom: 20px;
+            &__time {
+                display: block;
+                margin-left: auto;
+            }
+            &__dropdown {
+                margin-left: 10px;
+            }
+        }
+        &__body {
+            &__card {
+                .card__img {
+                    width: 120px;
+                    height: 120px;
+                    margin: 20px 0;
+                }
+                .card__body {
+                    &__text {
+                        width: 30vw;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// laptop view
+@media (min-width: 900px) {
+    .schedule {
+        width: 55vw;
+        &__bar {
+            @include flex-jc-ai(row , start , center);
+            width: 55vw;
+            margin-bottom: 20px;
+            &__title {
+                font-size: $largeTitle;
+            }
+            &__time {
+                display: block;
+                margin-left: auto;
+                padding: 0 10px;
+                font-size: 13px;
+                color: $textMuted;
+            }
+            &__dropdown {
+                margin-left: 10px;
+                height: 35px;
+                padding: 0 10px;
+                background-color: $black;
+                color: $white;
+                border-radius: 50px;
+            }
+        }
+        &__body {
+            @include flex-jc-ai(row , space-between , center);
+            width: 55vw;
+            &__card {
+                width: 20vw;
+                margin: 0;
+                text-align: center;
+                border-radius: 20px;
+                background-color: $cardBackground;
+                .card__body {
+                    &__text {
+                        width: 150px;
+                        margin: auto;
+                        font-size: $small;
+                        color: $textMuted;
+                    }
+                }
+            }
+            &__mini__card {
+                .mini__card {
+                    @include flex-jc-ai (row , start , center);
+                    width: 20vw;
+                    margin: 20px auto;
+                    border: 1px solid $textMuted;
+                    border-radius: 20px;
+                    &__date {
+                        padding: 15px;
+                        font-weight: $fontSemiBold;
+                        font-size: $largeTitle;
+                    }
+                }
+            }
+            &__period {
+                .period__time {
+                    display: block;
+                    padding: 35px 0;
+                    color: $textMuted;
+                }
+            }
+        }
+    }
+}
+
+// desktop view 
+// same as laptop

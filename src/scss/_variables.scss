@@ -1,3 +1,7 @@
+// font family
+$bodyFamily: 'Poppins', sans-serif;
+$progressFamily: 'JetBrains Mono', monospace;
+
 // color
 $white: #FFFFFF;
 $black: #000000;
@@ -5,6 +9,7 @@ $liteBlack: #000000cc;
 $background: #EEF1F6;
 $cardBackground: #F4F7FC;
 $sideCardBackground: #F2F5FA;
+$textMuted: rgba(0, 0, 0, 0.527);
 
 // font weight
 $fontLight: 300;
@@ -13,5 +18,9 @@ $fontMedium: 500;
 $fontSemiBold: 600;
 
 // font size
+$extraLarge: 35px;
 $largeTitle: 30px;
 $semiLarge: 25px;
+$regular: 20px;
+$medium: 15px;
+$small: 13px;

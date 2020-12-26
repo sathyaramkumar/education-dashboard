@@ -1,0 +1,94 @@
+// mobile view
+.side__card {
+    width: 90vw;
+    padding: 10px 20px;
+    border-radius: 35px;
+    background-color: $sideCardBackground;
+    &__title {
+        font-size: $largeTitle;
+    }
+    .course {
+        @include flex-jc-ai (row , start ,center);
+        margin: 20px 0;
+        &__img {
+            width: 45px;
+            height: 45px;
+        }
+        &__content {
+            margin-left: 20px;
+            .course__title {
+                font-size: $medium;
+            }
+            .course__sub__title {
+                color: $textMuted;
+            }
+        }
+        &__menu {
+            margin-left: auto;
+            color: $black;
+        }
+    }
+    &__progress {
+        .progress__title {
+            margin: 30px 0;
+        }
+        .circular {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            border-radius: 50%;
+            background-color: $black;
+            .inner {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                width: 120px;
+                height: 120px;
+                padding-top: 35px;
+                font-size: $extraLarge;
+                font-weight: $fontSemiBold;
+                font-family: $progressFamily;
+                border-radius: 50%;
+                text-align: center;
+                background-color: $sideCardBackground;
+            }
+        }
+        .progress__bar {
+            &__title {
+                font-weight: $fontRegular;
+            }
+            .progress { 
+                width: 100%;
+                height: 8px;
+                margin: 20px 0;
+                border-radius: 20px;
+                background-color: rgba(0, 0, 0, 0.164);
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 70%;
+                    height: 8px;
+                    border-radius: 20px;
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
+
+// tablet view
+// same 
+
+// laptop view
+@media (min-width: 900px) {
+    .side__card {
+        width: 25vw;
+        padding: 10px 20px;
+        border-radius: 35px;
+        background-color: $sideCardBackground;
+    }
+}
+
+// destop view 
+// same
