@@ -693,9 +693,10 @@ button {
 }
 
 .schedule__bar__dropdown {
-  margin-left: auto;
   height: 35px;
+  margin-left: auto;
   padding: 0 10px;
+  outline: none;
   background-color: #000000;
   color: #FFFFFF;
   border-radius: 50px;
@@ -902,6 +903,7 @@ button {
 
 .side__card {
   width: 90vw;
+  margin: auto;
   padding: 10px 20px;
   border-radius: 35px;
   background-color: #F2F5FA;
