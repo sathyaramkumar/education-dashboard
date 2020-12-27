@@ -96,7 +96,7 @@
     .status_bar {
         @include flex-jc-ai(row , start , center);
         flex-wrap: wrap;
-        width: 92vw;
+        width: 88vw;
         padding: 20px;
     }
 }

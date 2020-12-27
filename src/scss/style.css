@@ -32,6 +32,15 @@ button {
     display: -ms-flexbox;
     display: flex;
   }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .main {
+    margin-left: 8%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -39,6 +48,15 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .main {
+    margin-left: 8%;
   }
 }
 
@@ -471,7 +489,7 @@ button {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 92vw;
+    width: 88vw;
     padding: 20px;
   }
 }
@@ -600,7 +618,7 @@ button {
 @media (min-width: 900px) {
   .prof__profile {
     width: 55vw;
-    height: 45vh;
+    height: 37vh;
     padding: 0px 20px;
   }
   .prof__profile__body .profile__avatar__time {
